@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Edit - Cloud Town</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="page">
+		<div class="account-menu">
+			<button class="account-trigger" type="button" aria-label="Open account menu">
+				<span class="account-trigger-text">▼</span>
+			</button>
+			<div class="account-dropdown" hidden>
+				<button class="account-status-toggle" type="button" data-state="online">
+					<span class="status-dot"></span>
+					<span>Statut : <strong class="status-value">En ligne</strong></span>
+				</button>
+				<a class="account-settings" href="edit.html">
+					<span class="settings-icon">⚙</span>
+					<span>Paramètres</span>
+				</a>
+				<button class="account-signout" type="button">Se déconnecter</button>
+			</div>
+		</div>
+
+		<header class="logo-area">
+			<div class="logo-header-row">
+				<a class="back-arrow" href="index.html" aria-label="Back to main menu">←</a>
+				<a class="logo-badge" href="index.html" aria-label="Back to home">
+					<img src="logo/Cloud Town.SVG.png" alt="Cloud Town logo">
+				</a>
+			</div>
+			<h1>EDIT</h1>
+			<p>Customize your Cloud Town look</p>
+		</header>
+
+		<section class="game-panel">
+			<div class="pony-card">
+				<h2>Character Editor</h2>
+				<p class="status">Choose your look and style</p>
+
+				<div class="pony-preview">
+					<img class="pony-image" src="nature/skin/pony.png" alt="Cloud Town pony">
+				</div>
+			</div>
+
+			<div class="play-section">
+				<div class="play-row">
+					<button id="playButton" class="play-button" type="button">
+						<span id="playButtonText">Play Cloud Town</span>
+					</button>
+					<button id="serverToggleButton" class="server-toggle-button" type="button" aria-label="Open server list">▼</button>
+				</div>
+
+				<div id="serverList" class="server-list" hidden>
+					<h3>Available Servers</h3>
+
+					<button class="server-item" type="button" data-server-name="1/ 18+ server">
+						<div class="server-info">
+							<span class="server-name">1/ 18+ server</span>
+							<span class="server-status status-closed">Closed</span>
+						</div>
+						<span class="server-arrow">➜</span>
+					</button>
+
+					<button class="server-item" type="button" data-server-name="2/ safe 1">
+						<div class="server-info">
+							<span class="server-name">2/ safe 1</span>
+							<span class="server-status status-closed">Closed</span>
+						</div>
+						<span class="server-arrow">➜</span>
+					</button>
+
+					<button class="server-item" type="button" data-server-name="3/ safe 2">
+						<div class="server-info">
+							<span class="server-name">3/ safe 2</span>
+							<span class="server-status status-closed">Closed</span>
+						</div>
+						<span class="server-arrow">➜</span>
+					</button>
+				</div>
+			</div>
+
+			<p id="playMessage" class="play-message"></p>
+			<p class="server-note">Servers are closed to players. Reserved for developers for testing.</p>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
