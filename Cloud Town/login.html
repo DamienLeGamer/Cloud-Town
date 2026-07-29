@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cloud Town Login</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="page">
+		<div class="login-screen">
+			<div class="login-card">
+				<h2>Cloud Town Login</h2>
+				<p>Enter your credentials to access the menu.</p>
+
+				<div class="login-form">
+					<button class="connect-button social-button" type="button" data-provider="discord" data-url="https://discord.com/oauth2/authorize?client_id=YOUR_DISCORD_CLIENT_ID&redirect_uri=https%3A%2F%2Fcloud-town.example.com%2Fauth%2Fdiscord%2Fcallback&response_type=code&scope=identify%20email&prompt=consent">
+						<span class="social-icon">💬</span>
+					</button>
+
+					<button class="connect-button social-button" type="button" data-provider="google" data-url="https://accounts.google.com/o/oauth2/v2/auth?client_id=YOUR_GOOGLE_CLIENT_ID&redirect_uri=https%3A%2F%2Fcloud-town.example.com%2Fauth%2Fgoogle%2Fcallback&response_type=code&scope=openid%20email%20profile&prompt=consent">
+						<span class="social-icon">G</span>
+					</button>
+
+					<div class="developer-code-box">
+						<label class="login-field">
+							<span>Developer code</span>
+							<input id="developerCodeInput" type="password" inputmode="numeric" pattern="[0-9]*" placeholder="Enter code" maxlength="7">
+						</label>
+						<button id="developerCodeButton" class="connect-button" type="button">Access as developer</button>
+					</div>
+
+					<p id="loginMessage" class="login-message"></p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
