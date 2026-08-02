@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Settings - Cloud Town</title>
+	<link rel="icon" href="logo/cloud town icon.png" type="image/png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="page">
+		<div class="account-menu">
+			<button class="account-trigger" type="button" aria-label="Open account menu">
+				<span class="account-trigger-text">▼</span>
+			</button>
+			<div class="account-dropdown" hidden>
+				<button class="account-status-toggle" type="button" data-state="online">
+					<span class="status-dot"></span>
+					<span>Status: <strong class="status-value">Online</strong></span>
+				</button>
+				<a class="account-settings" href="settings.html">
+					<span class="settings-icon">⚙</span>
+					<span>Settings</span>
+				</a>
+				<button class="account-signout" type="button">Sign Out</button>
+			</div>
+		</div>
+
+		<header class="logo-area">
+			<div class="logo-header-row">
+				<a class="back-arrow" href="index.html" aria-label="Back to main menu">←</a>
+				<a class="logo-badge" href="index.html" aria-label="Back to home">
+					<img src="logo/cloud town icon.png" alt="Cloud Town logo">
+				</a>
+			</div>
+			<h1>SETTINGS</h1>
+			<p>Configure your account and preferences.</p>
+		</header>
+
+		<section class="game-panel">
+			<div class="profile-card">
+				<h2>Account Settings</h2>
+				<p>Change your username and add your date of birth.</p>
+				<div class="settings-form">
+					<label class="settings-field">
+						<span>Account ID</span>
+						<div id="accountIdDisplay" class="account-id-box">Generating ID...</div>
+					</label>
+					<label class="settings-field">
+						<span>Account created</span>
+						<div id="accountCreationDateDisplay" class="account-id-box">Loading creation date...</div>
+					</label>
+					<label class="settings-field">
+						<span>Username</span>
+						<input id="displayNameInput" class="settings-input" type="text" placeholder="Your display name">
+					</label>
+					<label class="settings-field">
+						<span>Date of Birth</span>
+						<div class="dob-row">
+							<input id="dobDayInput" class="dob-input" type="number" min="1" max="31" placeholder="Day">
+							<input id="dobMonthInput" class="dob-input" type="text" placeholder="Month">
+							<input id="dobYearInput" class="dob-input" type="number" min="1900" max="2100" placeholder="Year">
+						</div>
+					</label>
+					<button id="saveProfileButton" class="small-button save-button" type="button">Save to account</button>
+					<p id="profileMessage" class="form-message"></p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>

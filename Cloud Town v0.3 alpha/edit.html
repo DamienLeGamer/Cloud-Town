@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Edit - Cloud Town</title>
+	<link rel="icon" href="logo/cloud town icon.png" type="image/png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="page">
+		<div class="account-menu">
+			<button class="account-trigger" type="button" aria-label="Open account menu">
+				<span class="account-trigger-text">▼</span>
+			</button>
+			<div class="account-dropdown" hidden>
+				<button class="account-status-toggle" type="button" data-state="online">
+					<span class="status-dot"></span>
+					<span>Status: <strong class="status-value">Online</strong></span>
+				</button>
+				<a class="account-settings" href="settings.html">
+					<span class="settings-icon">⚙</span>
+					<span>Settings</span>
+				</a>
+				<button class="account-signout" type="button">Sign Out</button>
+			</div>
+		</div>
+
+		<header class="logo-area">
+			<div class="logo-header-row">
+				<a class="back-arrow" href="index.html" aria-label="Back to main menu">←</a>
+				<a class="logo-badge" href="index.html" aria-label="Back to home">
+					<img src="logo/cloud town icon.png" alt="Cloud Town logo">
+				</a>
+			</div>
+			<h1>EDIT</h1>
+			<p>Customize your Cloud Town look</p>
+		</header>
+
+		<section class="game-panel">
+			<div class="pony-card">
+				<h2>Character Editor</h2>
+				<p class="status">Choose your look and style</p>
+
+				<div class="pony-preview">
+					<img class="pony-image" src="nature/skin/pony.png" alt="Cloud Town pony">
+				</div>
+			</div>			
+			</div>
+
+			<div class="play-section">
+				<div class="play-row">
+					<button id="playButton" class="play-button" type="button">
+						<span id="playButtonText">Play Cloud Town</span>
+					</button>
+					<button id="serverToggleButton" class="server-toggle-button" type="button" aria-label="Open server list">▼</button>
+				</div>
+
+				<div id="serverList" class="server-list" hidden>
+					<h3>Available Servers</h3>
+
+					<button class="server-item" type="button" data-server-name="1/ 18+ server">
+						<div class="server-info">
+							<span class="server-name">1/ 18+ server</span>
+							<span class="server-status status-closed">Closed</span>
+						</div>
+						<span class="server-arrow">➜</span>
+					</button>
+
+					<button class="server-item" type="button" data-server-name="2/ safe 1">
+						<div class="server-info">
+							<span class="server-name">2/ safe 1</span>
+							<span class="server-status status-closed">Closed</span>
+						</div>
+						<span class="server-arrow">➜</span>
+					</button>
+
+					<button class="server-item" type="button" data-server-name="3/ safe 2">
+						<div class="server-info">
+							<span class="server-name">3/ safe 2</span>
+							<span class="server-status status-closed">Closed</span>
+						</div>
+						<span class="server-arrow">➜</span>
+					</button>
+				</div>
+			</div>
+
+			<p id="playMessage" class="play-message"></p>
+			<p class="server-note">Servers are closed to players. Reserved for developers for testing.</p>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+	<body data-key="kmncxb908z" data-base="/" data-version="0.128.2-alpha" data-google-play-app-id="town.pony.game" data-patreon-link="https://patreon.com/ponytownteam" data-boosty-link="https://boosty.to/ponytown/about" data-twitter-link="https://twitter.com/ponytownteam" data-vk-link="https://vk.com/ponytown" data-tg-link="https://t.me/ponytown_ofc" data-jobs-link="https://forms.gle/MQx4Hp2eWG2Gs4RL7" data-game-title="Pony Town" data-email="ponytownhelp@gmail.com" data-google-play-link="https://play.google.com/store/apps/details?id=town.pony.game" data-host="https://pony.town/" data-enable-service-worker="true" style="--vertical-action-bar-top-offset: 270px; --vh: 702px;"><pony-town-app ng-version="22.0.7" _nghost-ng-c1408093666=""><div _ngcontent-ng-c1408093666="" id="app-game" class="app-game shift-down" hidden=""><div _ngcontent-ng-c1408093666="" class="top-menu"><div _ngcontent-ng-c1408093666="" id="stats" class="top-menu-button"></div><notification-list _ngcontent-ng-c1408093666="" class="top-menu-button unselectable" _nghost-ng-c399543477=""><div _ngcontent-ng-c399543477="" dropdown="" class="notification-list unselectable dropdown only-show-when-needed"><ui-button _ngcontent-ng-c399543477="" aria-haspopup="true" dropdowntoggle="" title="Notifications" class="dropdown-toggle no-arrow" _nghost-ng-c2649538729="" aria-expanded="false"><button _ngcontent-ng-c2649538729="" style="width: 36px;"><canvas _ngcontent-ng-c2649538729="" width="29" height="32" style="width: 29px; height: 32px;"></canvas></button></ui-button><div _ngcontent-ng-c399543477="" class="notification-count rounded-circle d-none"></div><!----></div></notification-list><!----><modal-manager _ngcontent-ng-c1408093666=""></modal-manager><!----></div><canvas _ngcontent-ng-c1408093666="" id="canvas" class="unselectable pixelart"></canvas><div _ngcontent-ng-c1408093666="" id="chat-bubbles" style="font-size: 10px; --line-height: 12px; --emoji-scale: 1;"></div><span _ngcontent-ng-c1408093666="" id="info"></span><!----><!----><div _ngcontent-ng-c1408093666="" id="mini-map"><mini-map _ngcontent-ng-c1408093666="" _nghost-ng-c3604598886="" class="hide-minimap"><!----><div _ngcontent-ng-c3604598886="" class="minimap-box d-none" style="border-color: rgba(0, 0, 0, 0.45);"><div _ngcontent-ng-c3604598886="" class="d-none"><div _ngcontent-ng-c3604598886="" class="minimap overflow-hidden" style="width: 73px; height: 73px;"><canvas _ngcontent-ng-c3604598886="" agdragrelative="self" class="pixelart" height="1" width="1"></canvas></div><div _ngcontent-ng-c3604598886="" class="minimap-resize-bottom"></div><!----><div _ngcontent-ng-c3604598886="" class="minimap-resize-left"></div><!----><div _ngcontent-ng-c3604598886="" class="minimap-resize-bottom-left"></div><!----><!----></div></div><div _ngcontent-ng-c3604598886="" class="minimap-buttons"><div _ngcontent-ng-c3604598886="" class="minimap-buttons-background"><!----><!----><!----><!----></div></div></mini-map></div><!----><!----><!----><chat-box _ngcontent-ng-c1408093666="" id="chat-box" _nghost-ng-c2013707577="" class="d-none"><div _ngcontent-ng-c2013707577="" translate="no" class="chat-box" hidden=""><emoji-picker _ngcontent-ng-c2013707577="" _nghost-ng-c2038997977=""><!----><div class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div><div _ngcontent-ng-c2038997977="" cdktrapfocus="" class="emoji-picker-box fixed-position" style="display: none; width: 341px;"><fa-icon _ngcontent-ng-c2038997977="" class="ng-fa-icon resize-icon fa-width-auto"><svg data-prefix="fas" data-icon="caret-up" class="svg-inline--fa fa-caret-up" role="img" viewBox="0 0 320 512" aria-hidden="true"><path fill="currentColor" d="M140.3 135.2c12.6-10.3 31.1-9.5 42.8 2.2l128 128c9.2 9.2 11.9 22.9 6.9 34.9S301.4 320 288.5 320l-256 0c-12.9 0-24.6-7.8-29.6-19.8S.7 274.5 9.9 265.4l128-128 2.4-2.2z"></path></svg></fa-icon><!----><div _ngcontent-ng-c2038997977="" class="search"><input _ngcontent-ng-c2038997977="" placeholder="Search..." type="search" class="form-control form-control-search-icon"></div><div _ngcontent-ng-c2038997977="" class="emoji-picker-scroll-container"><div _ngcontent-ng-c2038997977="" tabindex="-1" class="emoji-picker-scrollbar scroll tThin unselectable"><!----></div></div><div _ngcontent-ng-c2038997977="" class="emoji-picker-resize-top"></div><!----><div _ngcontent-ng-c2038997977="" class="emoji-picker-resize-top-left"></div><!----><div _ngcontent-ng-c2038997977="" class="emoji-picker-resize-left"></div><!----></div><div class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div></emoji-picker><emoji-suggester _ngcontent-ng-c2013707577="" inputpadding="10" style="position: fixed; bottom: 47px;" _nghost-ng-c542073051=""><!----></emoji-suggester><!----><div _ngcontent-ng-c2013707577="" style="--party-color: #b2b3fb; --whisper-color: #ff0000;"><div _ngcontent-ng-c2013707577="" class="chat-textarea-wrap" style="background: rgba(0, 0, 0, 0.17);"><textarea _ngcontent-ng-c2013707577="" aria-label="Chat message" rows="1" wrap="off" enterkeyhint="send" class="chat-textarea chat-commons hide-scrollbar" maxlength="400"></textarea></div><div _ngcontent-ng-c2013707577="" class="chat-box-type" style="--emoji-scale: 2;"><span _ngcontent-ng-c2013707577=""></span>[<span _ngcontent-ng-c2013707577="" class="chat-box-type-name"></span>]:</div><div _ngcontent-ng-c2013707577="" class="chat-box-controls"><div _ngcontent-ng-c2013707577="" class="chat-counter" hidden=""></div><button _ngcontent-ng-c2013707577="" aria-label="Emojis" class="emote" title="Emojis (use Control + E to open)"><emote-box _ngcontent-ng-c2013707577="" emote="face" _nghost-ng-c3784330901=""><img _ngcontent-ng-c3784330901="" class="emote-box pixelart" aria-label="face" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAN0lEQVR4AVyNCwoAIAxCy/vfuXjiwBK2+YNpFU6hbFORmWXtINKHjvCtvkU4Fp3nNQYFBj5F7gUAAP//zUJiUQAAAAZJREFUAwCGuSABVlxTIgAAAABJRU5ErkJggg==" style="display: inline-block; width: 30px; height: 12px; visibility: visible; image-rendering: pixelated;"></emote-box></button><ui-button _ngcontent-ng-c2013707577="" title="Send message (hold Shift to send without closing input)" aria-label="Send message" _nghost-ng-c2649538729=""><button _ngcontent-ng-c2649538729="" style="width: 36px;"><canvas _ngcontent-ng-c2649538729="" width="29" height="32" style="width: 29px; height: 32px;"></canvas></button></ui-button><!----></div></div></div><ui-button _ngcontent-ng-c2013707577="" title="Activer/désactiver le chat" aria-label="Afficher/masquer le message" class="chat-open-button unselectable semitransparent" _nghost-ng-c2649538729=""><button _ngcontent-ng-c2649538729="" style="width: 36px;"><canvas _ngcontent-ng-c2649538729="" width="32" height="32" style="width: 32px; height: 32px;"></canvas></button></ui-button></chat-box><!----><game-announcer _ngcontent-ng-c1408093666="" _nghost-ng-c3855637579=""><div _ngcontent-ng-c3855637579="" id="game-announcer" style="display: none;"><div _ngcontent-ng-c3855637579="" id="announcerText" aria-live="assertive"><!----><!---->
+
+</body>
+</html>
